@@ -4,7 +4,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-DROP TABLE IF EXISTS [Response].[Admin];
+DROP TABLE IF EXISTS [dbo].[Response];
 
 
 GO
