@@ -76,7 +76,7 @@ It may display the following message. Please press "**Yes**" to proceed.
 <img width="352" alt="img6" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/d95a15c2-976a-483d-a200-49d1b9ea0bf3">
 
 <br/>
-After the "Data Tools Operation" is complete, you can click the "Refresh" button in the "SQL Server Object Explorer" Once you open "Databases" the "***miniCodingExerciseContext***" database will appear.
+After the "Data Tools Operation" is complete, you can click the "Refresh" button in the "SQL Server Object Explorer" Once you open "Databases" the "miniCodingExerciseContext" database will appear.
 <br/>
 <br/>
 <img width="337" alt="img9" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/d444a6db-ec38-48df-8154-fd8dea636351">
