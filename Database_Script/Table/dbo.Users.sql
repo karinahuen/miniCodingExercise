@@ -4,7 +4,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-DROP TABLE IF EXISTS usp_name [dbo].[Users];
+DROP TABLE IF EXISTS  [dbo].[Users];
 
 
 GO
