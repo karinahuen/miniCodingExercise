@@ -70,7 +70,7 @@ Then, enter "***miniCodingExerciseContext***" for the "**database name**" and pr
 <img width="554" alt="img5" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/55e3dbd2-5d56-493e-bdc5-fc1b8e531643">
 
 <br/>
-It may display the following message. Please press "**Yes**" to proceed.
+It may display the following message. Please press "Yes" to proceed.
 <br/>
 <br/>
 <img width="352" alt="img6" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/d95a15c2-976a-483d-a200-49d1b9ea0bf3">
