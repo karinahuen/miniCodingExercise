@@ -78,4 +78,9 @@ After the "Data Tools Operation" is complete, you can click the "Refresh" button
 Finally, when you click the "Debug" button in the "Top navigation bar," choose "IIS Express," and then click "Run," the entire project's demonstration will be completed.
 <br/>
 <img width="349" alt="img10" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/09488c86-c9f0-4991-9efc-130482095854">
+<br/>
 
+<br/>
+Final Result
+<br/>
+<img width="1088" alt="img13" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/b8d1e2a2-87cf-4c00-be0b-cf718fb5444b">
