@@ -1,0 +1,101 @@
+﻿@model miniCodingExercise.ViewModels.UsersChatroomViewModel
+@{
+    ViewData["Title"] = "Customer Service";
+}
+<link rel="stylesheet" href="~/css/chatroom.css" />
+
+<div class="row">
+    <div id="chat_div" class="col-5 same_line">
+        @if (Model != null)
+        {
+                <p>Current User Name: @Model.displayname</p>
+                <div id="currentDatetime"></div>
+        }
+    </div>
+    <div class="same_line col-5">
+        <p style="font-style:italic; font-weight:bold;">Guide: Keyword for automatic response e.g. Wi-fi, contact, service...</p>
+    </div>
+</div>
+
+<div id="chatBox" class="container">
+    <div class="row p-1">
+        <p class="boldTxt">Chat Box</p>
+    </div>
+    <div class="row p-1">
+        <div class="col-1">User Name</div>
+        <input type="hidden" id="userID" value="@Model.Id"/>
+        <div class="col-5"><input type="text" id="userDisplayName" value="@Model.displayname" readonly disabled /></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-1">Message</div>
+        <div class="col-5"><input type="text" class="w-100" id="messageInput" /></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-6 text-end">
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-10">
+            <hr />
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-10">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+@section userChatScript{
+
+    <script>
+        $(document).ready(function () {
+            //set timer
+            setInterval(function () {
+                var date = new Date();
+                //set am/pm 
+                var hourClock = (date.getHours()  < 12) ? "AM" : "PM";
+                $('#currentDatetime').html((date.getHours() < 10 ? "0" : "") + date.getHours() + ":" + (date.getMinutes() < 10 ? "0" : "")
+                + date.getMinutes() + ":"  + (date.getSeconds() < 10 ? "0" : "") + date.getSeconds() + " " + hourClock);
+            }, 500);
+
+            
+        });
+
+        function getResponseMsgByDB(id) {
+            //clear text
+            $('#messageInput').val('');
+            //get data
+            $.ajax({
+                type: 'POST',
+                url: '/Chatroom/GetInstantResponseDataByMID',
+                data: { mId: id },
+                success: function (result) {
+                    if (result != null) {
+                        var re = JSON.stringify(result);
+                        var parseData = JSON.parse(re);
+                        var li = document.createElement("li");
+                        if (parseData != null || parseData == 'undefined') {
+                            parseData.forEach((element) => {
+                                document.getElementById("messagesList").appendChild(li);
+                                li.textContent = element.created_by + ": " + element.content;
+                                li.style.color = 'blue';
+                                li.style.fontStyle = 'italic';
+                                li.style.fontWeight = 'bold';
+                            });
+                        }
+                    }
+                }
+            });
+
+        }
+
+
+    </script>
+
+    
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chatBox.js"></script>
+
+}

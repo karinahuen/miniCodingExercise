@@ -1,0 +1,23 @@
+#chatBox {
+    border-style: solid;
+}
+
+.row{
+    width:100%;
+}
+
+.same_line{
+    display: inline-block;
+}
+
+.boldTxt {
+    font-weight: bold;
+}
+
+#userDisplayName {
+    font-style: italic;
+}
+
+.hidden_div{
+    display:none;
+}

@@ -1,0 +1,61 @@
+﻿@model miniCodingExercise.ViewModels.ChatHistoryViewModel
+@{
+    ViewData["Title"] = "Customer Service";
+}
+<link rel="stylesheet" href="~/css/chatroom.css" />
+
+<div id="chat_div">
+    @if (Model != null)
+    {
+        <div class="row">
+            <div class="col-5">
+                <p>Current User Name: @Model.displayname</p>
+            </div>
+            <div class="col-5" style="text-align: right;">
+                @using (Html.BeginForm("ExportChatHistory", "History", FormMethod.Post))
+                {
+                    @Html.HiddenFor(m => m.userId)
+                    @Html.HiddenFor(m => m.displayname)
+                    <input type="submit" value="Export as Text File"/>
+                }
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row p-1">
+                <p class="boldTxt">Chat History</p>
+            </div>
+            <div class="row p-1">
+                <div class="col-10">
+                    <hr />
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-10">
+                    <ul id="histoaryList">
+                        @if(Model.charHistoryList != null)
+                        {
+                            if(Model.charHistoryList.Count > 0)
+                            {
+                                foreach (var element in Model.charHistoryList)
+                                {
+                                    <li>
+                                        <span style="font-weight:bold;">@Model.displayname said</span>
+                                        @element.message_content (@element.message_date)
+                                    </li>
+                                    <li style="color:blue; font-style:italic; font-weight:bold;">
+                                        @element.admin_display_name : @element.responsed_content (@element.responsed_date)
+                                    </li>
+                                }
+                            }
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p stlye="color:red; font-weight:bold; font-style: italic;">Sorry. No data found.</p>
+    }
+</div>
