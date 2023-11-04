@@ -10,7 +10,7 @@ This code project is running in Visual Studio.
 
 Please make sure you have installed the following tools - ASP.NET and web development, if you are using Visual Studio for the first time.
 
-<img width="327" alt="img12" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/8f9986ea-0fae-47d5-8d79-a7db2e2467dd">
+<img width="327" alt="img12" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/c47d2c42-090b-4c54-82d2-c24687bcfff2">
 <br/>
 <br/>
 
@@ -25,7 +25,7 @@ After you open Visual Studio, please go to "Get started," find "Clone a reposito
 
 After successfully obtaining all the files, you will see the following document files.
 <br/>
-<img width="301" alt="img1" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/b289d313-df1c-43af-b57e-89415f394f7b">
+<img width="301" alt="img1" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/489f6c85-4b3d-4388-86fa-f7b858dbcc69">
 
 | Folder/File | Description |
 | --- | --- |
@@ -38,7 +38,7 @@ Please follow the instruction as below:
 <br/>
 Select "SQL Server Object Explorer" under at the "View" tab
 <br/>
-<img width="358" alt="img2" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/c5a6cf66-c69c-48f9-8c06-b1c7ef9c2961">
+<img width="358" alt="img2" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/42220366-ba55-4759-8368-fceec64390c5">
 <br/>
 
 
@@ -46,24 +46,24 @@ Select "SQL Server Object Explorer" under at the "View" tab
 <br/>
 Afterward, the "SQL SERVER OBJECT EXPLORER navigation bar" will pop up on the left-hand side. Then, right-click on the database under the server MSSQLLocalDB and select "Publish Data-tier Application."
 <br/>
-<img width="321" alt="img3" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/1d5d1c00-bce1-4a24-9eac-c3abbe58e819">
+<img width="321" alt="img3" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/960920e7-13de-4c16-beb9-d7fba6f530f8">
 <br/>
 
 <br/>
 Upon opening it, in "File on disk," locate the "miniCodingExerciseContext.dacpac" file that you included during the cloning of the documents.
 <br/>
-<img width="217" alt="img4" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/3c2b3bc1-68a1-4810-87be-6189ce543783">
+<img width="217" alt="img4" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/9e416957-1719-4f92-a4e0-65f1ff27f7c6">
 <br/>
 
 Then, enter "***miniCodingExerciseContext***" for the "database name" and press the "publish button."
 <br/>
-<img width="554" alt="img5" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/55e3dbd2-5d56-493e-bdc5-fc1b8e531643">
+<img width="554" alt="img5" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/42e20e2c-49ac-456a-9c70-80f5ca70059e">
 <br/>
 
 <br/>
 It may display the following message. Please press "Yes" to proceed.
 <br/>
-<img width="352" alt="img6" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/d95a15c2-976a-483d-a200-49d1b9ea0bf3">
+<img width="352" alt="img6" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/66a72591-6d4e-4758-8d80-81ade7cf991f">
 <br/>
 
 <br/>
@@ -71,10 +71,11 @@ After the "Data Tools Operation" is complete, you can click the "Refresh" button
 <br/>
 
 
-<img width="337" alt="img9" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/d444a6db-ec38-48df-8154-fd8dea636351">
+<img width="337" alt="img9" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/ddaed43f-2ac7-4f62-8121-3416e72410ff">
 <br/>
 
 <br/>
 Finally, when you click the "Debug" button in the "Top navigation bar," choose "IIS Express," and then click "Run," the entire project's demonstration will be completed.
 <br/>
-<img width="349" alt="img10" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/b5104c1b-d957-40f3-a11d-7ff64d8e6414">
+<img width="349" alt="img10" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/09488c86-c9f0-4991-9efc-130482095854">
+
