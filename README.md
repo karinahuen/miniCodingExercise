@@ -50,7 +50,7 @@ Afterward, the "SQL SERVER OBJECT EXPLORER navigation bar" will pop up on the le
 <br/>
 
 <br/>
-Upon opening it, in "File on disk," locate the "***miniCodingExerciseContext.dacpac***" file that you included during the cloning of the documents.
+Upon opening it, in "File on disk," locate the "miniCodingExerciseContext.dacpac" file that you included during the cloning of the documents.
 <img width="217" alt="img4" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/3c2b3bc1-68a1-4810-87be-6189ce543783">
 <br/>
 
