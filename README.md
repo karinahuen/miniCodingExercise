@@ -25,7 +25,8 @@ After you open Visual Studio, please go to "Get started" find "Clone a repositor
 
 After successfully obtaining all the files, you will see the following document files.
 <br/>
-<img width="301" alt="img1" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/489f6c85-4b3d-4388-86fa-f7b858dbcc69">
+<img width="190" alt="img11" src="https://github.com/karinahuen/miniCodingExercise/assets/107039794/19929a72-8ddb-4d14-b618-74ce75676865">
+
 
 | Folder/File | Description |
 | --- | --- |
